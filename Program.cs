@@ -53,7 +53,6 @@ builder.Services.AddDbContext<StoreDbContext>(
             builder.Configuration.GetConnectionString("PostgreSQLConnectionString")
         )
 );
-builder.Services.AddAWSLambdaHosting(LambdaEventSource.RestApi);
 
 var app = builder.Build();
 
